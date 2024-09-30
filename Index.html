@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div id="creative">
+            <div class="c2" id="click2"></div>
+        </div>
+        <div id="container">
+            <ul id="second-container">
+                <li class="child1 childs"><a href="#">9,755,593 Books</a></li>
+                <li class="child2 childs"><a href="#">84,8376,646 Articles</a></li>
+                <li class="child3 childs"><a href="#">Zlibrary Home</a></li>
+
+            </ul>
+        </div>
+        <div id="container2">
+
+            <ul id="second-container2">
+                <div class="c" id="clic"></div>
+
+                
+                <li class="kid1 kids" id="Dom">Sign in
+                    
+                    <div id="Menu-box">
+                        <ul class="Menu-box" id="event">
+                            <li class="K1 Ks"><a href="#">Logn</a></li>
+                            <hr>
+                            <li class="K2 Ks"><a href="#">Registration</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="kid2 kids"><a href="#">Donate</a></li>
+
+                <li class="kid3 kids" id="get"><span class="fa-solid fa-caret-down" ></span><img src="">
+                    <div class="Menu_input" id="modify">
+                        <input type="text"
+                            placeholder="search" id="inpt">
+                    </div>
+                </li>
+                <li class="kid4 kids" id="take"><span class="fa-solid fa-align-justify"></span><img src="">
+                    <div id="Menu-drop">
+                        <ul class="Menu-drop" id="change">
+                            <li><a href="#"><span class="fa-solid fa-circle-arrow-down"></span> Add Book</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fa-solid fa-hourglass-empty"></span> Book requests</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fa-solid fa-book-open"></span> Booklists</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fa-solid fa-bars"></span> Categories</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fa-regular fa-face-laugh-beam "></span> Most Popular</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fa-regular fa-clock"></span> Recently Added</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fa-solid fa-check"></span> Top Z-librarians</a></li>
+                            <hr>
+                            <li><a href="#"><span class="fas fa-blog"></span>  Blog</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header> 
+    <div class="c1" id="click"></div>
+
+
+        <div id="big">
+            <h1>
+                <span>My</span>Library 
+
+            </h1>
+            <div class="text-under-title">Part of MyLibrary project. The world's largest ebook library
+            </div>
+            <form action="get" id="form-A1">
+                <div id="diver">
+                    <button>General Search</button>
+                    <button>Fulltext Search</button>
+                </div>
+                <div id="search">
+                    <input type="search" placeholder="Search for title,author,ISBN,publisher,md5..">
+                    <button type="submit">Search</button>
+                </div>
+                <div id="so">
+                    <span>Search options</span>
+                </div>
+            </form>
+        </div>
+        <script>
+
+            const ok = document.getElementById("Dom");
+            const myBtn = document.getElementById("event");
+            const bb = document.getElementById("click");
+            const bbb = document.getElementById("click2");
+            const bbbb = document.getElementById("clic");
+            let vrt = document.getElementById('get')
+            let vrt2 = document.getElementById('modify')
+            let vrtx = document.getElementById('take')
+            let vrtx2 = document.getElementById('change')
+            let nod1 = document.getElementById('inpt')
+
+
+            nod1.addEventListener(
+                "click", (eo) => {
+                    vrt2.classList.remove("script2")
+                }
+            )
+            ok.addEventListener(
+                "click", (eo) => {
+                    myBtn.classList.toggle("script");
+                    vrt2.classList.remove("script2");
+                    vrtx2.classList.remove("script3");
+
+
+                }
+            );
+            bb.addEventListener(
+                "click", (eo) => {
+                    myBtn.classList.remove("script");
+                    vrt2.classList.remove("script2");
+                    vrtx2.classList.remove("script3");
+
+
+                }
+            );
+            bbb.addEventListener(
+                "click", (eo) => {
+                    myBtn.classList.remove("script");
+                    vrt2.classList.remove("script2");
+                    vrtx2.classList.remove("script3");
+
+
+                }
+            );
+            bbbb.addEventListener(
+                "click", (eo) => {
+                    myBtn.classList.remove("script");
+                    vrt2.classList.remove("script2");
+                    vrtx2.classList.remove("script3");
+
+
+
+
+                }
+            );
+            vrt.addEventListener(
+                "click", (eo) => {
+                    vrt2.classList.toggle('script2');
+                    myBtn.classList.remove("script");
+                    vrtx2.classList.remove("script3");
+
+
+
+                }
+            );
+            vrtx.addEventListener(
+                "click", (eo) => {
+                    vrtx2.classList.toggle('script3');
+                    myBtn.classList.remove("script");
+                    vrt2.classList.remove("script2");
+
+
+
+
+
+
+                }
+            );
+
+
+
+        </script>
+</body>
+
+</html>
